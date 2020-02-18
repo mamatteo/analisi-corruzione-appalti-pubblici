@@ -10,9 +10,9 @@ library(tidyverse)
 library(scales)
 
 #Importiamo i dati
-path_tab_staz_appaltanti = "/Users/matteo/Desktop/Analisi dati in R/02_Analisi esplorativa dei dati/Tabelle di input/tab_staz_appaltanti.csv"
-path_tab_gare = "/Users/matteo/Desktop/Analisi dati in R/02_Analisi esplorativa dei dati/Tabelle di input/tab_gare.csv"
-path_tab_ipa = "/Users/matteo/Desktop/Analisi dati in R/02_Analisi esplorativa dei dati/dataset//ipa.txt"
+path_tab_staz_appaltanti = "il-tuo-path-qui/tab_staz_appaltanti.csv"
+path_tab_gare = "il-tuo-path-qui/tab_gare.csv"
+path_tab_ipa = "il-tuo-path-qui/ipa.txt"
 
 #Creazione delle tabelle
 tab_staz_appaltanti <- read.csv(file = path_tab_staz_appaltanti, header = TRUE, sep = ";", na.strings = "", stringsAsFactors=FALSE)
