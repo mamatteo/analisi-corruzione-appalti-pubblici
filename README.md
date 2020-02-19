@@ -18,6 +18,7 @@ La cartella "Indici di corruzione" invece, contiene i seguenti file:
 - `indice_04.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
 - `indice_05.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
 - `indice_06.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
+- `tabella_finale.R`: consente di costruire la tabella finale con il riassunto di tutti i sei indicatori e il punteggio finale.
 
 ## Licenza
 Il codice presente in questo repo è distribuito secondo la liceza XYZ
