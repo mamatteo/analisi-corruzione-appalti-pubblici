@@ -50,9 +50,10 @@ tabella_finale <- tabella_finale %>%
 
 #Ordino la tabella finale per punteggi decrescenti
 tabella_finale_ordinata <- tabella_finale[order(-tabella_finale$Corruption_Indicator_Score),]
-leprimedieci <- head(tabella_finale_ordinata,3500) 
+t <-10
+leprime_t <- head(tabella_finale_ordinata,t) 
 
-#Le prime dieci in tabella
+#Le prime x in tabella
 sign_formatter_01 <- formatter("span", 
                             style = x ~ style(color = ifelse(x > 0.5, "red",
                                                       ifelse(x == 0.5, "blue",
@@ -60,7 +61,7 @@ sign_formatter_01 <- formatter("span",
 
 
 
-formattable(leprimedieci, align =c("l","c","c","c","c", "c", "c", "c"), 
+formattable(leprime_t, align =c("l","c","c","c","c", "c", "c", "c"), 
                                list(
                                p1 = sign_formatter_01,
                                p2 = sign_formatter_01,
