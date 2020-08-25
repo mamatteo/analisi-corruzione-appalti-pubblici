@@ -21,7 +21,7 @@ La cartella "Indici di corruzione" invece, contiene i seguenti file:
 - `tabella_finale.R`: consente di costruire la tabella finale con il riassunto di tutti i sei indicatori e il punteggio finale.
 
 ## Pulizia dei dati 
-Il codice presente in questo file va istanziato con i percorsi di input (il path dove importare i dati) 
+Il codice riportato nel file `pulire_i_dati.R` va completato con il proprio _path_ di input (la cartella da cui importare i dati) 
 
 ```
 path_ds_appalti = ".../Appalti2015.csv"
@@ -29,7 +29,7 @@ path_ds_oggettogare = ".../Oggettigare2015.csv"
 path_ds_cigcup = ".../CigCup2015.csv"
 path_ds_aggiudicatari = ".../Aggiudicatari2015.csv"
 ```
-e i percorsi di output (il luogo dove esportare le tabelle pulite).
+e con il proprio _path_ di output (la cartella dove salvare le tabelle finali). Si sostituiscano i tre punti con il proprio _path_. 
 
 ```
 ## | SALVATAGGIO TABELLE FINALI
