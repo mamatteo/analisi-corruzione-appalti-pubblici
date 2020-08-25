@@ -5,10 +5,12 @@ Questo _repository_ contiene i codici utilizzati per condurre le analisi descrit
 
 Questo _repository_ nasce con un duplice intento: da un lato quello di riportare il codice prodotto e poterlo così più facilmente visualizzare. Dall'altro quello di condividere il codice prodotto con chiunque voglia contribuire al suo miglioramento.  
 
+I file elencati di seguito hanno un ordine logicamente consequenziale: si consiglia pertanto di elaborare i dati secondo l'ordine riportato di seguito.
+
 ## Cosa trovi in questo _repository_ 
 All'interno di questo repo, sono stati caricati i seguenti file: 
-- `pulire_i_dati.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
-- `analisi_preliminari.R`: contiene il codice per condurre alcune analisi preliminare sui dataset;
+1) `pulire_i_dati.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
+2) `analisi_preliminari.R`: contiene il codice per condurre alcune analisi preliminare sui dataset;
 
 La cartella "Indici di corruzione" invece, contiene i seguenti file:
 - `preprare_i_dati.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
@@ -20,7 +22,7 @@ La cartella "Indici di corruzione" invece, contiene i seguenti file:
 - `indice_06.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
 - `tabella_finale.R`: consente di costruire la tabella finale con il riassunto di tutti i sei indicatori e il punteggio finale.
 
-## Pulizia dei dati 
+## Pulizia dei dati (`pulire_i_dati.R`)
 Il codice riportato nel file `pulire_i_dati.R` va completato con il proprio _path_ di input (la cartella da cui importare i dati) 
 
 ```
