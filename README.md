@@ -8,6 +8,7 @@ Questo _repository_ nasce con un duplice intento: da un lato quello di riportare
 ## Cosa trovi in questo _repository_ 
 All'interno di questo repo, sono stati caricati i seguenti file: 
 - `pulire_i_dati.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
+- `analisi_esplorative.R`: contiene il codice per alcune analisi esplorative sui dati;
 
 La cartella "Indici di corruzione" invece, contiene i seguenti file:
 - `indice_01.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione _i_;
@@ -41,8 +42,22 @@ write.csv2(tab_staz_appaltanti,'.../tab_staz_appaltanti.csv', row.names=FALSE)
 write.csv2(tab_gare,'.../tab_gare.csv', row.names=FALSE)
 write.csv2(tab_aggiudicatari,'.../tab_aggiudicatari.csv', row.names=FALSE)
 ```
+## 2) Analisi esplorative
+Il codice contenuto nel file `analisi_esplorative.R` contiene alcune analisi esplorative condotte sui dati. Le analisi riportate hanno carattere esemplificativo, nel senso che mostrano solo alcune analisi effettuabili sui dati in esame. Il _focus_ di questo lavoro riguardava l'implementazione degli indicatori di corruzione considerati, e non un'articolata analisi dati. Tuttavia si ritiene che alcuni risultati statistici ottenuti, alcune visualizzazioni grafiche e alcune informazioni di dettaglio, hanno contribuito e arricchitto i risultati ottenuti dagli indicatori di corruzione elaborati.
 
-## 2) Indici di corruzione (`indice_XY.R`)
+Si noti che i dati da importare non sono più i file '.csv' grezzi, ma le tabelle 'tab_staz_appaltanti.csv', 'tab_gare.csv' ottenute dall'esecuzione del codice contenuto nel file `pulire_i_dati.R`. Oltre alle tabelle ottenute in pecedenza verrà importato anche il file 'ipa.txt' (scaricato da Internet dal sito Istat), che contiene una serie di informazioni utili inerenti le pubbliche amministrazioni italiane.
+
+```
+#Importiamo i dati
+path_tab_staz_appaltanti = "il-tuo-path-qui/tab_staz_appaltanti.csv"
+path_tab_gare = "il-tuo-path-qui/tab_gare.csv"
+path_tab_ipa = "il-tuo-path-qui/ipa.txt"
+.
+.
+.
+```
+
+## 3) Indici di corruzione (`indice_XY.R`)
 Per ogni indicatore di corruzione studiato è stato realizzato uno script che si preoccupa di effettuarne il calcolo sui dati precedentemente puliti dal codice contenuto in `pulire_i_dati.R`.
 
 ## Licenza
