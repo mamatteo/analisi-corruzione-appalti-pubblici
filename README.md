@@ -22,7 +22,7 @@ La cartella "Indici di corruzione" invece, contiene i seguenti file:
 - `indice_06.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
 - `tabella_finale.R`: consente di costruire la tabella finale con il riassunto di tutti i sei indicatori e il punteggio finale.
 
-## Pulizia dei dati (`pulire_i_dati.R`)
+## 1) Pulizia dei dati (`pulire_i_dati.R`)
 Il codice riportato nel file `pulire_i_dati.R` va completato con il proprio _path_ di input (la cartella da cui importare i dati) 
 
 ```
@@ -39,6 +39,9 @@ write.csv2(tab_staz_appaltanti,'.../tab_staz_appaltanti.csv', row.names=FALSE)
 write.csv2(tab_gare,'.../tab_gare.csv', row.names=FALSE)
 write.csv2(tab_aggiudicatari,'.../tab_aggiudicatari.csv', row.names=FALSE)
 ```
+
+## 2) Analisi preliminari (`analisi_preliminari.R`)
+Il codice riportato nel
 
 ## Licenza
 Il codice presente in questo repo è distribuito secondo la liceza XYZ
