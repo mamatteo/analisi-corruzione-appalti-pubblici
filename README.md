@@ -5,21 +5,17 @@ Questo _repository_ contiene i codici utilizzati per condurre le analisi descrit
 
 Questo _repository_ nasce con un duplice intento: da un lato quello di riportare il codice prodotto e poterlo così più facilmente visualizzare. Dall'altro quello di condividere il codice prodotto con chiunque voglia contribuire al suo miglioramento.  
 
-I file elencati di seguito hanno un ordine logicamente consequenziale: si consiglia pertanto di elaborare i dati secondo l'ordine riportato di seguito.
-
 ## Cosa trovi in questo _repository_ 
 All'interno di questo repo, sono stati caricati i seguenti file: 
-1) `pulire_i_dati.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
-2) `analisi_preliminari.R`: contiene il codice per condurre alcune analisi preliminare sui dataset;
+- `pulire_i_dati.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
 
 La cartella "Indici di corruzione" invece, contiene i seguenti file:
-- `preprare_i_dati.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
-- `indice_01.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
-- `indice_02.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
-- `indice_03.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
-- `indice_04.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
-- `indice_05.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
-- `indice_06.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
+- `indice_01.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione i;
+- `indice_02.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione ii;
+- `indice_03.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione iii;
+- `indice_04.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione iv;
+- `indice_05.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione v;
+- `indice_06.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione vi;
 - `tabella_finale.R`: consente di costruire la tabella finale con il riassunto di tutti i sei indicatori e il punteggio finale.
 
 ## 1) Pulizia dei dati (`pulire_i_dati.R`)
@@ -30,18 +26,24 @@ path_ds_appalti = ".../Appalti2015.csv"
 path_ds_oggettogare = ".../Oggettigare2015.csv" 
 path_ds_cigcup = ".../CigCup2015.csv"
 path_ds_aggiudicatari = ".../Aggiudicatari2015.csv"
+.
+.
+.
 ```
 e con il proprio _path_ di output (la cartella dove salvare le tabelle finali). Si sostituiscano i tre punti con il proprio _path_. 
 
 ```
+.
+.
+.
 ## | SALVATAGGIO TABELLE FINALI
 write.csv2(tab_staz_appaltanti,'.../tab_staz_appaltanti.csv', row.names=FALSE)
 write.csv2(tab_gare,'.../tab_gare.csv', row.names=FALSE)
 write.csv2(tab_aggiudicatari,'.../tab_aggiudicatari.csv', row.names=FALSE)
 ```
 
-## 2) Analisi preliminari (`analisi_preliminari.R`)
-Il codice riportato nel
+## 2) Indici di corruzione (`indice_XY.R`)
+Per ogni indicatore di corruzione studiato è stato realizzato uno script che si preoccupa di effettuarne il calcolo sui dati precedentemente puliti dal codice contenuto in `pulire_i_dati.R`.
 
 ## Licenza
 Il codice presente in questo repo è distribuito secondo la liceza XYZ
