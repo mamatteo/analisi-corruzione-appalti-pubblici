@@ -16,10 +16,10 @@ gc() # Pulizia della memoria RAM
 
 ## | IMPORTARE I DATI
 #Import dei dati
-path_ds_appalti = "/Users/matteo/Desktop/Analisi dati in R/01_Leggere e preparare i dati/dataset/2015/Appalti2015.csv"
-path_ds_oggettogare = "/Users/matteo/Desktop/Analisi dati in R/01_Leggere e preparare i dati/dataset/2015/Oggettigare2015.csv" 
-path_ds_cigcup = "/Users/matteo/Desktop/Analisi dati in R/01_Leggere e preparare i dati/dataset/2015/CigCup2015.csv"
-path_ds_aggiudicatari = "/Users/matteo/Desktop/Analisi dati in R/01_Leggere e preparare i dati/dataset/2015/Aggiudicatari2015.csv"
+path_ds_appalti = ".../Appalti2015.csv"
+path_ds_oggettogare = ".../Oggettigare2015.csv" 
+path_ds_cigcup = ".../CigCup2015.csv"
+path_ds_aggiudicatari = ".../Aggiudicatari2015.csv"
 
 ds_appalti <- read.csv(file = path_ds_appalti, header = FALSE, sep = ";", na.strings = "", stringsAsFactors=FALSE)
 ds_oggettogare <- read.csv(file = path_ds_oggettogare, header = FALSE, sep = ";", na.strings = "", stringsAsFactors=FALSE)
@@ -192,6 +192,6 @@ temptab_gare2 <- oggettogare_con_cig_unico %>% select(Cig, OggettoGara, OggettoL
 tab_gare <- inner_join(temptab_gare1, temptab_gare2)
 
 ## | SALVATAGGIO TABELLE FINALI
-write.csv2(tab_staz_appaltanti,'/Users/matteo/Desktop/Analisi dati in R/02_Analisi esplorativa dei dati/Tabelle di input/tab_staz_appaltanti.csv', row.names=FALSE)
-write.csv2(tab_gare,'/Users/matteo/Desktop/Analisi dati in R/02_Analisi esplorativa dei dati/Tabelle di input/tab_gare.csv', row.names=FALSE)
-write.csv2(tab_aggiudicatari,'/Users/matteo/Desktop/Analisi dati in R/02_Analisi esplorativa dei dati/Tabelle di input/tab_aggiudicatari.csv', row.names=FALSE)
+write.csv2(tab_staz_appaltanti,'.../tab_staz_appaltanti.csv', row.names=FALSE)
+write.csv2(tab_gare,'.../tab_gare.csv', row.names=FALSE)
+write.csv2(tab_aggiudicatari,'.../tab_aggiudicatari.csv', row.names=FALSE)
