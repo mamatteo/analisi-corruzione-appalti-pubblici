@@ -10,12 +10,12 @@ All'interno di questo repo, sono stati caricati i seguenti file:
 - `pulire_i_dati.R`: contiene le operazioni di _data cleaning_ svolte sui datatset;
 
 La cartella "Indici di corruzione" invece, contiene i seguenti file:
-- `indice_01.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione i;
-- `indice_02.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione ii;
-- `indice_03.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione iii;
-- `indice_04.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione iv;
-- `indice_05.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione v;
-- `indice_06.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione vi;
+- `indice_01.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione _i_;
+- `indice_02.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione _ii_;
+- `indice_03.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione _iii_;
+- `indice_04.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione _iv_;
+- `indice_05.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione _v_;
+- `indice_06.R`: contiene le operazioni necessarie al calcolo dell'indicatore di corruzione _vi_;
 - `tabella_finale.R`: consente di costruire la tabella finale con il riassunto di tutti i sei indicatori e il punteggio finale.
 
 ## 1) Pulizia dei dati (`pulire_i_dati.R`)
