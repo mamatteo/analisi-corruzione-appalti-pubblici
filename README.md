@@ -57,5 +57,5 @@ path_tab_ipa = "il-tuo-path-qui/ipa.txt"
 .
 ```
 
-## 3) Indici di corruzione (`indice_XY.R`)
+## 3) Indici di corruzione (`indice_0X.R`)
 Per ogni indicatore di corruzione studiato è stato realizzato uno script che si preoccupa di effettuarne il calcolo. Il codice contenuto nel file `tabella_finale.R`, calcola alcune misure di correlazione tra i punteggi ottenuti.
